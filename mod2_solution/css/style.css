@@ -1,1 +1,52 @@
+div{
+    padding: 10px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: #EFEFEF;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff1e00;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+/* Media queries*/
+
+/* Large/Desktop */
+@media (min-width: 992px) {
+    .box {
+        width: 30%;
+    }
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .box {
+        width: 48%;
+    }
+
+    .box:nth-child(3) {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media (max-width: 767px) {
+    width: 100%;
+}
 
